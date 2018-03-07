@@ -31,5 +31,8 @@ class QuestionViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    //var questions: [Question] = [
+       // Question (text: "Which food do you like the most?")
+   // type.single,
+    ]
 }
