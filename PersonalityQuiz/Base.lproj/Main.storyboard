@@ -83,12 +83,12 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <segue destination="Z0N-MX-LgK" kind="presentation" identifier="resultsSegue" modalTransitionStyle="partialCurl" id="cE0-WD-iva"/>
+                        <segue destination="Z0N-MX-LgK" kind="presentation" identifier="InitialSegue" modalTransitionStyle="partialCurl" id="cE0-WD-iva"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-198" y="134"/>
+            <point key="canvasLocation" x="-1958" y="177"/>
         </scene>
         <!--Question View Controller-->
         <scene sceneID="hnc-Jy-rqO">
@@ -104,22 +104,34 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gxO-Ti-O52">
                                         <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="SMl-ge-PM2" eventType="touchUpInside" id="W4B-2O-jLl"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CnH-Cb-qnh">
                                         <rect key="frame" x="0.0" y="50" width="46" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="SMl-ge-PM2" eventType="touchUpInside" id="inE-0m-1Su"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mYn-q4-IUt">
                                         <rect key="frame" x="0.0" y="100" width="46" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="SMl-ge-PM2" eventType="touchUpInside" id="Rca-Pc-C6r"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9VB-uz-1bq">
                                         <rect key="frame" x="0.0" y="150" width="46" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="SMl-ge-PM2" eventType="touchUpInside" id="Exa-I9-CBX"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="waD-z7-6WJ">
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="waD-z7-6WJ">
                                 <rect key="frame" x="20" y="128" width="335" height="234"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BRb-52-4pZ">
@@ -184,14 +196,14 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="hrh-16-D3p">
-                                <rect key="frame" x="110" y="266" width="162" height="120.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="hrh-16-D3p">
+                                <rect key="frame" x="110" y="266" width="186" height="120.5"/>
                                 <subviews>
                                     <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="lQ5-eB-8qC">
-                                        <rect key="frame" x="-2" y="0.0" width="166" height="31"/>
+                                        <rect key="frame" x="-2" y="0.0" width="190" height="31"/>
                                     </slider>
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="jTw-Xx-KEy">
-                                        <rect key="frame" x="0.0" y="50" width="162" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="50" width="186" height="20.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0V6-JP-6uh">
                                                 <rect key="frame" x="0.0" y="0.0" width="42" height="20.5"/>
@@ -200,7 +212,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jmt-oV-vhH">
-                                                <rect key="frame" x="120" y="0.0" width="42" height="20.5"/>
+                                                <rect key="frame" x="144" y="0.0" width="42" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -208,7 +220,7 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rnh-1Q-x5h">
-                                        <rect key="frame" x="0.0" y="90.5" width="162" height="30"/>
+                                        <rect key="frame" x="0.0" y="90.5" width="186" height="30"/>
                                         <state key="normal" title="Submit Answer"/>
                                     </button>
                                 </subviews>
@@ -241,16 +253,24 @@
                             <constraint firstItem="iPH-81-FB1" firstAttribute="leading" secondItem="fey-By-SvS" secondAttribute="leading" constant="20" id="x7K-N9-EX9"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fey-By-SvS"/>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="rDM-Tw-DLA"/>
-                                <exclude reference="waD-z7-6WJ"/>
-                                <exclude reference="hrh-16-D3p"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="24X-Dh-hcM"/>
                     <connections>
+                        <outlet property="multipleLabel1" destination="fFj-Rb-hzZ" id="yMv-UE-YrZ"/>
+                        <outlet property="multipleLabel2" destination="g9P-A5-9yS" id="mta-HY-Wat"/>
+                        <outlet property="multipleLabel3" destination="cPI-US-xZ9" id="tf7-u4-K3X"/>
+                        <outlet property="multipleLabel4" destination="RKA-tF-A2L" id="rfL-Ka-AGb"/>
+                        <outlet property="multipleStackView" destination="waD-z7-6WJ" id="dgb-bt-xEz"/>
+                        <outlet property="progressView" destination="Y4y-EQ-JUY" id="A3v-UI-f2T"/>
+                        <outlet property="questionLabel" destination="iPH-81-FB1" id="IGN-qM-uyx"/>
+                        <outlet property="rangeStackView" destination="hrh-16-D3p" id="AK9-Op-5d0"/>
+                        <outlet property="rangedLabel1" destination="0V6-JP-6uh" id="cPS-9Z-vEB"/>
+                        <outlet property="rangedLabel2" destination="Jmt-oV-vhH" id="IXW-U4-hWr"/>
+                        <outlet property="singleButton1" destination="gxO-Ti-O52" id="57h-XV-K5f"/>
+                        <outlet property="singleButton2" destination="CnH-Cb-qnh" id="ufu-s2-Jcs"/>
+                        <outlet property="singleButton3" destination="mYn-q4-IUt" id="Oea-1e-kLg"/>
+                        <outlet property="singleButton4" destination="9VB-uz-1bq" id="CRk-X1-uVd"/>
+                        <outlet property="singleStackView" destination="rDM-Tw-DLA" id="F7e-Uz-hJt"/>
                         <segue destination="ahn-G8-PJO" kind="show" id="oan-kk-m1E"/>
                     </connections>
                 </viewController>
@@ -284,9 +304,9 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vN6-xx-1AZ">
-                                <rect key="frame" x="151" y="43" width="46" height="30"/>
+                                <rect key="frame" x="149" y="43" width="51" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Results"/>
                             </button>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S2m-Fg-2r1">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
